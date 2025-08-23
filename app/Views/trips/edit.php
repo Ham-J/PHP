@@ -1,3 +1,16 @@
+<?php
+/** @var array<string,mixed>|null $trip */
+$trip = $trip ?? null;
+/** @var array<int,array{id:int,name:string}> $agencies */
+$agencies = $agencies ?? [];
+
+if ($trip === null) {
+    http_response_code(404);
+    echo '<div class="alert alert-danger">Trajet introuvable.</div>';
+    return;
+}
+?>
+
 <?php ob_start(); $now = date('Y-m-d\TH:i'); ?>
 <h1 class="h4 mb-3">Modifier le trajet</h1>
 

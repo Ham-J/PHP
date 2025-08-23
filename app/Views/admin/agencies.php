@@ -1,3 +1,7 @@
+<?php
+/** @var array<int,array<string,mixed>> $agencies */
+$agencies = $agencies ?? [];
+?>
 <?php ob_start(); ?>
 <h1 class="h4 mb-4">Agences</h1>
 

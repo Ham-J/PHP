@@ -1,3 +1,10 @@
+<?php
+/** @var array<int,array<string,mixed>> $trips */
+$trips = $trips ?? [];
+/** @var array<int,array{id:int,name:string}> $agencies */
+$agencies = $agencies ?? [];
+?>
+
 <?php ob_start(); $now = date('Y-m-d\TH:i'); ?>
 <h1 class="h4 mb-4">Trajets</h1>
 
