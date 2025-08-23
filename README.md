@@ -28,12 +28,12 @@ Application PHP pour la gestion de trajets
 
 ### Compte administrateur
 
--   **Login** : `admin`\
+-   **Email** : `anna@test.com`
 -   **Mot de passe** : `Admin!123`
 
 ### Compte utilisateur
 
--   **Login** : `user`\
+-   **email** : `sebastien@test.com`
 -   **Mot de passe** : `User!123`
 
 ------------------------------------------------------------------------
