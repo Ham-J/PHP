@@ -1,3 +1,8 @@
+<?php
+/** @var array<int,array{id:int,name:string}> $agencies */
+$agencies = $agencies ?? [];
+?>
+
 <?php ob_start(); $now = date('Y-m-d\TH:i'); ?>
 <h1 class="h4 mb-3">Proposer un trajet</h1>
 

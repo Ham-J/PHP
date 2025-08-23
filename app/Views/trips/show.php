@@ -1,3 +1,14 @@
+<?php
+/** @var array<string,mixed>|null $trip */
+$trip = $trip ?? null;
+
+if ($trip === null) {
+    http_response_code(404);
+    echo '<div class="alert alert-danger">Trajet introuvable.</div>';
+    return;
+}
+?>
+
 <?php ob_start(); ?>
 
 <h1 class="h4 mb-3">Détails du trajet</h1>

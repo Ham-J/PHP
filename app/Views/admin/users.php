@@ -1,3 +1,8 @@
+<?php
+/** @var array<int,array<string,mixed>> $users */
+$users = $users ?? [];
+?>
+
 <?php ob_start(); ?>
 <h1 class="h4 mb-4">Utilisateurs</h1>
 
