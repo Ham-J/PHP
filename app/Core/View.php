@@ -1,8 +1,7 @@
 <?php
 namespace App\Core;
 
-class View
-{
+class View{
     public static function render(string $template, array $vars = []): void
     {
         extract($vars);

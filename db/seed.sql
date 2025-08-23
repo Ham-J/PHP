@@ -9,11 +9,12 @@ ALTER TABLE agencies AUTO_INCREMENT = 1;
 ALTER TABLE users AUTO_INCREMENT = 1;
 
 INSERT INTO users (first_name, last_name, email, phone, password_hash, role) VALUES
-('John',      'Dubois',    'john@test.com',     '0601020304', '$2y$10$2pJk8sYFh4x5l9m1lQbqLeZz8nE1m3Y9iYcYl5c5o0sJ7CwG2R7rO', 'user'),
-('Sebastien', 'Martin',    'sebastien@test.com','0611223344', '$2y$10$2pJk8sYFh4x5l9m1lQbqLeZz8nE1m3Y9iYcYl5c5o0sJ7CwG2R7rO', 'user'),
-('Bernard',   'Leroy',     'bernard@test.com',  '0622334455', '$2y$10$2pJk8sYFh4x5l9m1lQbqLeZz8nE1m3Y9iYcYl5c5o0sJ7rO',      'user'),
-('Isabelle',  'Moreau',    'isabelle@test.com', '0633445566', '$2y$10$2pJk8sYFh4x5l9m1lQbqLeZz8nE1m3Y9iYcYl5c5o0sJ7rO',      'user'),
-('Anna',      'Bernier',   'anna@test.com',     '0644556677', '$2y$10$yEqOnbQXh7yxu9xvnzZQkuH5L1n5v6sWzQ5oA2tfqCkAvbQhY7h7a', 'admin');
+('John',      'Dubois',   'john@test.com',     '0601020304', '$2b$12$PZfBf5ONFAststiwMBG9COj.8JhJ.5LOKbkMZhYTeeKMfucyeAKha', 'user'),
+('Sebastien', 'Martin',   'sebastien@test.com','0611223344', '$2b$12$PZfBf5ONFAststiwMBG9COj.8JhJ.5LOKbkMZhYTeeKMfucyeAKha', 'user'),
+('Bernard',   'Leroy',    'bernard@test.com',  '0622334455', '$2b$12$PZfBf5ONFAststiwMBG9COj.8JhJ.5LOKbkMZhYTeeKMfucyeAKha', 'user'),
+('Isabelle',  'Moreau',   'isabelle@test.com', '0633445566', '$2b$12$PZfBf5ONFAststiwMBG9COj.8JhJ.5LOKbkMZhYTeeKMfucyeAKha', 'user'),
+('Anna',      'Bernier',  'anna@test.com',     '0644556677', '$2b$12$AMpHr3aWV/P3MZDkk9PyzOg1dxIV5Ov7DSHaWifDba1gqRXzYFxZe', 'admin');
+
 
 INSERT INTO agencies (name) VALUES
 ('Paris'),

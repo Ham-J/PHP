@@ -1,0 +1,72 @@
+@use "sass:color";
+
+$primary-blue: #00497c;
+$footer-bg: #384050;
+$button-green: #82b864;
+
+
+.navbar {
+  background-color: $primary-blue !important;
+
+  .navbar-brand,
+  .nav-link,
+  .btn {
+    color: #fff !important;
+  }
+
+  .nav-link:hover {
+    opacity: 0.8;
+  }
+}
+
+body {
+  padding-bottom: 80px; 
+}
+
+#mainFooter {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 60px;
+  background-color: $footer-bg;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1030;
+}
+
+.form-wrapper {
+  max-width: 500px;
+  margin: 1rem auto;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+.btn-success-custom {
+  background-color: $button-green;
+  border-color: $button-green;
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    background-color: color.adjust($button-green, $lightness: -7%);
+    border-color: color.adjust($button-green, $lightness: -7%);
+    color: #fff;
+  }
+}
+
+
+.table {
+  th {
+    background-color: #f8f9fa;
+  }
+}
+
+.card {
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,.05);
+}

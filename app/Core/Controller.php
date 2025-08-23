@@ -1,16 +1,31 @@
 <?php
 namespace App\Core;
 
-abstract class Controller
-{
-    protected function view(string $template, array $vars = []): void
+/**
+ * Contrôleur de base : rendu de vues et redirections.
+ */
+class Controller{
+    /**
+     * Rend une vue en exposant les variables du tableau fourni.
+     *
+     * @param string               $path  Chemin relatif (ex: 'home/index')
+     * @param array<string,mixed>  $data  Données à extraire pour la vue
+     */
+    protected function view(string $path, array $data = []): void
     {
-        View::render($template, $vars);
+        extract($data, EXTR_SKIP);
+        require __DIR__ . '/../Views/' . $path . '.php';
     }
 
-    protected function redirect(string $path): void
+    /**
+     * Redirige vers une URL et termine le script.
+     *
+     * @param string $to URL de destination
+     * @return never
+     */
+    protected function redirect(string $to): void
     {
-        header('Location: ' . $path);
+        header('Location: ' . $to);
         exit;
     }
 }
